@@ -6,7 +6,9 @@ gapi.load('client:auth2', function() {
   }).then(function() {
     return gapi.auth2.getAuthInstance().signIn();
   }).then(function() {
-    // Authentication successful, proceed with authorized API calls
+    var accessToken = gapi.auth2.getAuthInstance().currentUser.get().getAuthResponse().access_token;
+    // Authentication successful, proceed with authorized API calls using the access token
+    // You can use the accessToken variable in your API requests
   }).catch(function(error) {
     // Handle error
   });
