@@ -1,6 +1,6 @@
 gapi.load('client:auth2', function() {
   gapi.client.init({
-    clientId: 'YOUR_CLIENT_ID',
+    clientId: '532266076903-1pf8189dnao39fvsgi26kvplpmq1far1.apps.googleusercontent.com',
     scope: 'https://www.googleapis.com/auth/drive',
     discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/drive/v3/rest']
   }).then(function() {
